@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "firebase/firestore";
+import 'firebase/app';
+import 'firebase/auth';
 import { FirebaseAppProvider } from 'reactfire';
+import App from './App';
 
 
 const firebaseConfig = {
