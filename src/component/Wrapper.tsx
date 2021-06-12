@@ -21,8 +21,8 @@ import ListItem from "@material-ui/core/ListItem";
 import { Card, CardContent, Grid } from "@material-ui/core";
 import NavigationIcon from '@material-ui/icons/Navigation';
 //-------------component ---------------//
-import Loadingmessage from "./Successfetch";
-import Maincontent from "./Errorfetch";
+import Successfetch from "./Successfetch";
+import Errorfetch from "./Errorfetch";
 import Searchbar from "./Searchbar";
 const drawerWidth = 240;
 
@@ -183,7 +183,7 @@ export default function Wrapper() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Card style={{ marginTop: "10px", marginBottom: "10px" }}>
+        <Card style={{marginTop: "10px", marginBottom: "10px" }}>
                 <CardContent>
         <Typography>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -203,12 +203,13 @@ export default function Wrapper() {
         </CardContent>
         </Card>
         <div className={classes.root}>
+          {/**Material UI grid system is so hard to use ...... */}
           <Grid container spacing={3}>
-            <Grid item xs={6}>
+            <Grid style={{alignSelf:'center'}} item xs={6}>
               <Card style={{ marginTop: "10px", marginBottom: "10px" }}>
                 <CardContent>
                   <h3>
-                    <Loadingmessage />
+                    <Successfetch />
                   </h3>
                 </CardContent>
               </Card>
@@ -217,7 +218,7 @@ export default function Wrapper() {
               <Card style={{ marginTop: "10px", marginBottom: "10px" }}>
                 <CardContent>
                   <h3>
-                    <Maincontent />
+                    <Errorfetch />
                   </h3>
                 </CardContent>
               </Card>

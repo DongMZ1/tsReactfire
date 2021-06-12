@@ -37,8 +37,8 @@ export default function Searchbar() {
     <Paper component="form" className={classes.root}>
       <InputBase
         className={classes.input}
-        placeholder="Search Google Maps"
-        inputProps={{ 'aria-label': 'Material-ui' }}
+        placeholder="Material UI with Typescript"
+        inputProps={{ 'aria-label': 'search google maps' }}
       />
       <IconButton type="submit" className={classes.iconButton} aria-label="search">
         <SearchIcon />
