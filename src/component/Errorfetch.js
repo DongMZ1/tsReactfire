@@ -8,6 +8,7 @@ import React, { Suspense } from "react";
 import { ALL } from "dns";
 
 const Maincontent = () => {
+  //I create an collection named items with two document in my database
   const ItemsRef = useFirestore().collection("items");
   const { data, status } = useFirestoreCollection(ItemsRef);
   //there is an issue, the status is constantly loading...
