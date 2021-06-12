@@ -14,7 +14,16 @@ const Maincontent = () => {
   return (
     <>
       UseFirestoreCollection hook cannot fetch data from firebase database,
-      the status is always "{status}"
+      the status is always "{status}" after initial rendering. even if the component is rerendered,
+      still cannot fetch data from firebase database...
+      
+      <br />
+      The data ?
+       {data? (data?.docs?.map(item => 
+            <p>{item.name}</p>
+      )) : ' Is empty based on js expression see Maincontent.js'}
+      <br />
+      Reference: https://github.com/aaronksaunders/quick-intro-reactfire1/blob/master/src/Home.js
     </>
   );
 };
