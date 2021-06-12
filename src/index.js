@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { FirebaseAppProvider } from 'reactfire';
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyAFeVyH8AQAFaoUlxJNAy_YkvnPEiVtpWY",
   authDomain: "reactfire-96e09.firebaseapp.com",
