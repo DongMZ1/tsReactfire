@@ -4,8 +4,9 @@ import { useFirestoreCollection, useFirestore } from "reactfire";
 
 const Maincontent = () =>{
     const usersref = useFirestore().collection("users");
+    
     const {data, status} = useFirestoreCollection(usersref);
-
+    
     if(status === 'loading') return <>is Loading ..........</>;
 
     return <>
