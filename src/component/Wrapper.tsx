@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function Topheader() {
+export default function Wrapper() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -198,6 +198,7 @@ export default function Topheader() {
           donec massa sapien faucibus et molestie ac.
         </Typography>
         <h4><Loadingmessage /></h4>
+        <h4><Maincontent /></h4>
         <Typography>
           Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
           facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac

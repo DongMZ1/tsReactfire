@@ -4,7 +4,7 @@ import "./App.css";
 
 
 //components
-import Topheader from "./component/Topheader";
+import Topheader from "./component/Wrapper";
 
 const App = () => {
   return(
