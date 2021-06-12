@@ -5,15 +5,11 @@ import "./App.css";
 
 //components
 import Topheader from "./component/Topheader";
-import Maincontent from "./component/Maincontent";
-import Loadingmessage from "./component/Loadingmessage";
 
 const App = () => {
   return(
     <>
     <Topheader />
-    <Maincontent />
-    <Loadingmessage />
     </>
   )
 }

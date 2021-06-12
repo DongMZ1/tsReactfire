@@ -12,7 +12,7 @@ const Maincontent = () => {
   const { data, status } = useFirestoreCollection(ItemsRef);
   //there is an issue, the status is constantly loading...
   return <>
-   {status === "loading" ? <p>UseFirestoreCollection hook cannot fetch data from firebase database, the status is always "{status}"</p> : {status}}
+   {status === "loading" ? <>UseFirestoreCollection hook cannot fetch data from firebase database, the status is always "{status}"</> : {status}}
   </>;
 };
 

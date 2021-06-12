@@ -13,10 +13,10 @@ const Loadingmessage = () => {
   }
 
   return (
-    <p>
+    <>
       Finish the quickstart, setting up my firestore, created a collection and
       added one document, The burrito is {data.yummy ? "good" : "bad"}!
-    </p>
+    </>
   );
 };
 
